@@ -19,7 +19,7 @@ public class LogoutTest extends BaseTest {
    login.openLoginPage();
    login.login("John Doe", "ThisIsNotAPassword");
    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-   
+   wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h2")));
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("menu-toggle"))).click();
   // driver.findElement(By.id("menu-toggle")).click();
    //driver.findElement(By.linkText("Logout")).click();
