@@ -1,5 +1,0 @@
-base\BaseTest.class
-tests\LogoutTest.class
-tests\LoginTest.class
-pages\LoginPage.class
-utils\DriverFactory.class
